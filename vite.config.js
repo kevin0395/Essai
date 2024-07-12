@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
-export default definconfig({
+export default defineConfig({
   base:"/Essai/"
 })
