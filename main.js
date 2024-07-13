@@ -7,7 +7,7 @@ document.querySelectorAll('.preview').forEach(preview => {
   iframe.height = "100%";
   iframe.frameBorder = "0";
 
-  preview.appendChild(iframe);
+  preview.querySelector('.preview-iframe-container').appendChild(iframe);
   preview.addEventListener('click', () => {
     window.location.href = url;
   });
