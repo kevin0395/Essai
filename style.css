@@ -28,7 +28,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px; /* Ajouter une marge en bas de la dernière fenêtre */
+  margin-bottom: 50px; /* Ajouter une marge en bas de la dernière fenêtre */
 }
 
 .preview-iframe-container {
@@ -37,7 +37,7 @@ h1 {
 }
 
 .preview-title {
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 1.4em;
   color: #333;
   text-align: center;
@@ -45,7 +45,7 @@ h1 {
 
 .footer-left {
   position: fixed;
-  bottom: 10px;
+  bottom: 20px;
   left: 10px;
   font-size: 0.8em;
   color: #666;
@@ -53,7 +53,7 @@ h1 {
 
 .footer-right {
   position: fixed;
-  bottom: 10px;
+  bottom: 20px;
   right: 10px;
   font-size: 0.8em;
   color: #666;
