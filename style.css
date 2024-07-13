@@ -20,8 +20,9 @@ h1 {
 }
 
 .preview {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -50,8 +51,9 @@ body {
 /* Media query for iPad landscape */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .preview {
-    width: 250px;
-    height: 150px;
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
   }
 
   .preview-title {
@@ -66,8 +68,9 @@ body {
     margin: auto;
   }
   .preview {
-    width: 350px;
-    height: 250px;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
   }
   .preview-title {
     font-size: 1.4em;
