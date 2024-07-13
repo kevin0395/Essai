@@ -8,7 +8,7 @@ body {
 h1 {
   text-align: center;
   margin-top: 50px; /* Augmenter la marge en haut */
-  margin-bottom: 50px; /* Ajouter plus de marge après le titre principal */
+  margin-bottom: 25px; /* Réduire de moitié la marge après le titre principal */
   color: black;
 }
 
@@ -17,18 +17,18 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 40px; /* Augmenter l'espace entre les aperçus */
-  padding-top: 100px; /* Augmenter la marge entre le titre et les aperçus */
 }
 
 .preview {
-  width: 100%;
-  max-width: 600px;
-  height: 400px;
+  width: 120%; /* Augmenter la largeur de 20% */
+  max-width: 720px; /* Augmenter la largeur maximale de 20% */
+  height: 480px; /* Augmenter la hauteur de 20% */
   position: relative;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px; /* Ajouter une marge en bas de la dernière fenêtre */
 }
 
 .preview-iframe-container {
