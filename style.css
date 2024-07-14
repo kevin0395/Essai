@@ -121,7 +121,7 @@ h1 {
 .mini-preview iframe {
   width: 100%; /* Set width to 100% of the container */
   height: 150%; /* Increase height to crop bottom */
-  transform: translateY(-25%); /* Move up to hide bottom content */
+  transform: translateY(25%); /* Move up to hide bottom content */
 }
 
 .mini-preview-title {
