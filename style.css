@@ -113,17 +113,20 @@ h1 {
   width: 200px; /* Set fixed width */
   height: 200px; /* Set fixed height for square shape */
   overflow: hidden; /* Hide overflow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mini-preview iframe {
-  width: 200%; /* Increase width for more cropping */
-  height: 200%; /* Increase height for more cropping */
+  width: 300px; /* Increase width for more cropping */
+  height: 300px; /* Increase height for more cropping */
   transform: translate(-25%, -25%); /* Center the iframe content */
 }
 
 .mini-preview-title {
   position: absolute;
-  bottom: -30px; /* Position below the iframe */
+  bottom: 10px; /* Position above the subtitle */
   width: 100%;
   text-align: center;
   font-size: 1em;
