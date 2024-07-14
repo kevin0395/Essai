@@ -121,7 +121,7 @@ h1 {
 .mini-preview iframe {
   width: 300px; /* Increase width for more cropping */
   height: 300px; /* Increase height for more cropping */
-  transform: translate(-25%, -50%); /* Center the iframe content */
+  transform: translate(-25%, 25%); /* Center the iframe content */
 }
 
 .mini-preview-title {
