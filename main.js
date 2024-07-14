@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const previews = document.querySelectorAll('.preview');
   const sidebarItems = document.querySelectorAll('.sidebar-item');
+  const miniPreviewsContainer = document.getElementById('mini-previews-container');
   const miniPreviews = document.querySelectorAll('.mini-preview');
 
   sidebarItems.forEach(item => {
@@ -8,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const target = item.getAttribute('data-target');
       if (target === "home") {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        miniPreviewsContainer.classList.toggle('hidden'); // Show/Hide mini previews
       } else {
         const targetIndex = parseInt(target, 10);
         const targetPreview = previews[targetIndex];

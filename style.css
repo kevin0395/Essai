@@ -66,7 +66,7 @@ h1 {
   top: 0;
   right: 0;
   height: 100%;
-  width: 60px; /* Augmenter la largeur pour les aperçus miniatures */
+  width: 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,7 +96,7 @@ h1 {
   opacity: 0.5;
 }
 
-.mini-previews {
+#mini-previews-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,16 +105,18 @@ h1 {
 }
 
 .mini-preview {
-  width: 30px;
+  width: 60px;
   height: 30px;
   cursor: pointer;
   text-align: center;
   color: white;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
   font-size: 0.8em;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: grey; /* Assurez-vous d'avoir une couleur de fond pour la visibilité */
+  background-color: grey;
+}
+
+.hidden {
+  display: none;
 }
