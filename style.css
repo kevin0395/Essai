@@ -135,14 +135,19 @@ h1 {
 
 /* Add media queries for responsiveness */
 @media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-
   h1 {
     font-size: 2em;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  .sidebar {
+    width: 40px;
+  }
+
+  .sidebar-item {
+    width: 40px;
+    padding: 5px 6px;
   }
 
   #preview-container {
@@ -157,31 +162,12 @@ h1 {
     margin-bottom: 20px;
   }
 
-  .sidebar {
-    width: 40px;
-  }
-
-  .sidebar-item {
-    width: 40px;
-    padding: 5px 6px;
+  .preview-iframe-container {
+    height: 50vh; /* Adjust height for better fit on mobile */
   }
 
   #mini-previews-container {
-    flex-direction: column;
-    margin: 10px;
-    width: calc(100% - 20px);
-  }
-
-  .mini-preview {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
-  }
-
-  .mini-preview iframe {
-    width: 100%;
-    height: 200px;
-    transform: translate(0%, 0%);
+    display: none; /* Hide mini previews on mobile */
   }
 
   .footer-left,
