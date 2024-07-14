@@ -80,11 +80,18 @@ h1 {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   cursor: pointer;
-  padding: 7.5px 7.5px; /* Ajouter une marge entre le texte et les bords */
-  transition: width 0.3s, font-weight 0.3s;
+  padding: 7px 8px; /* Ajouter une marge entre le texte et les bords */
+  transition: width 0.3s, font-weight 0.3s, opacity 0.3s;
+  opacity: 0.5; /* Ajouter une transparence par défaut */
 }
 
 .sidebar-item.active {
   font-weight: bold;
   width: 60px; /* Élargir lorsque mis en évidence */
+  opacity: 1; /* Supprimer la transparence lorsque actif */
+}
+
+/* Atténuer les éléments non actifs */
+.sidebar-item:not(.active) {
+  opacity: 0.5;
 }
