@@ -16,19 +16,19 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px; /* Augmenter l'espace entre les aperçus */
+  gap: 0; /* Réduire l'espace entre les aperçus */
 }
 
 .preview {
-  width: 140%; /* Augmenter la largeur de 20% supplémentaire */
-  max-width: 864px; /* Augmenter la largeur maximale de 20% supplémentaire */
-  height: 576px; /* Augmenter la hauteur de 20% supplémentaire */
+  width: 100%; /* Prendre toute la largeur disponible */
+  max-width: 864px;
+  height: 100vh; /* Prendre toute la hauteur de l'écran */
   position: relative;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px; /* Ajouter une marge en bas de la dernière fenêtre */
+  margin-bottom: 0; /* Enlever la marge en bas */
 }
 
 .preview-iframe-container {
@@ -80,7 +80,7 @@ h1 {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   cursor: pointer;
-  padding: 7px 8px; /* Ajouter une marge entre le texte et les bords */
+  padding: 10px 5px; /* Ajouter une marge entre le texte et les bords */
   transition: width 0.3s, font-weight 0.3s, opacity 0.3s;
   opacity: 0.5; /* Ajouter une transparence par défaut */
 }
