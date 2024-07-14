@@ -108,10 +108,10 @@ h1 {
 
 .mini-preview {
   flex: 1;
-  margin: 0 10px;
+  margin: 0 20px; /* Adjusted margin for spacing */
   position: relative;
-  width: 200px; /* Set fixed width */
-  height: 200px; /* Set fixed height for square shape */
+  width: 400px; /* Double the width */
+  height: 400px; /* Double the height for square shape */
   overflow: hidden; /* Hide overflow */
   display: flex;
   flex-direction: column;
@@ -119,8 +119,8 @@ h1 {
 }
 
 .mini-preview iframe {
-  width: 450px; /* Increase width for more cropping */
-  height: 500px; /* Increase height for more cropping */
+  width: 900px; /* Double the width for more cropping */
+  height: 1000px; /* Double the height for more cropping */
   transform: translate(-25%, 42%); /* Center the iframe content */
 }
 
@@ -129,8 +129,6 @@ h1 {
   font-size: 1em;
   color: #333;
   margin-top: 10px;
-}
-
-.hidden {
-  display: none;
+  position: absolute;
+  bottom: 10px; /* Position the title at the bottom */
 }
