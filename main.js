@@ -4,18 +4,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const miniPreviewsContainer = document.getElementById('mini-previews-container');
   const miniPreviews = document.querySelectorAll('.mini-preview');
 
+  // Set "Accueil" as active when the page loads
+  const homeButton = document.querySelector('.sidebar-item[data-target="home"]');
+  homeButton.classList.add('active');
+
   sidebarItems.forEach(item => {
     item.addEventListener('click', () => {
       const target = item.getAttribute('data-target');
       sidebarItems.forEach(item => item.classList.remove('active')); // Remove active class from all items
-      item.classList.add('active'); // Add active class to the clicked item
       if (target === "home") {
+        item.classList.add('active'); // Keep "Accueil" active on click
         window.scrollTo({ top: 0, behavior: 'smooth' });
         miniPreviewsContainer.classList.toggle('hidden'); // Show/Hide mini previews
       } else {
         const targetIndex = parseInt(target, 10);
         const targetPreview = previews[targetIndex];
         targetPreview.scrollIntoView({ behavior: 'smooth' });
+        item.classList.add('active'); // Set the clicked item as active
       }
     });
   });
