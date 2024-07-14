@@ -171,24 +171,23 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 800px) and (orientation: landscape) {
-  .sidebar {
-    display: none; /* Hide sidebar on mobile landscape */
-  }
-
-  #preview-container {
-    flex-direction: row; /* Row direction in landscape mode */
-    flex-wrap: wrap; /* Allow wrapping if necessary */
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .preview {
-    width: 48%;
-    height: 40vh; /* Adjust height for landscape mode */
-    margin: 1%;
+    width: 80%;
+    height: 80vw; /* Square proportions */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
-  .footer-left,
-  .footer-right {
-    font-size: 0.8em;
+  .preview-title {
+    font-size: 0.8em; /* Smaller subtitle */
   }
 }
