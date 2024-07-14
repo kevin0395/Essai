@@ -18,7 +18,7 @@ h1 {
   align-items: center;
   gap: 0;
   margin-left: 60px; /* Adjust left margin */
-  margin-right: 60px; /* Adjust right margin */
+  margin-right: 120px; /* Adjust right margin */
 }
 
 .preview {
