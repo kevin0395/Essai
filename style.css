@@ -116,8 +116,8 @@ h1 {
 }
 
 .mini-preview iframe {
-  width: 150%; /* Increase width for cropping */
-  height: 150%; /* Increase height for cropping */
+  width: 200%; /* Increase width for more cropping */
+  height: 200%; /* Increase height for more cropping */
   transform: translate(-25%, -25%); /* Center the iframe content */
 }
 
