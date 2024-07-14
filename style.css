@@ -17,6 +17,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 0;
+  margin-left: 60px; /* Adjust left margin */
+  margin-right: 60px; /* Adjust right margin */
 }
 
 .preview {
@@ -100,13 +102,20 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 20px;
-  width: calc(100% - 40px);
+  margin: 20px 60px; /* Adjust left and right margins */
+  width: calc(100% - 120px); /* Adjust width based on margins */
 }
 
 .mini-preview {
   flex: 1;
   margin: 0 10px;
+}
+
+.mini-preview-title {
+  text-align: center;
+  font-size: 1em;
+  color: #333;
+  margin-top: 10px;
 }
 
 .hidden {
