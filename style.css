@@ -66,7 +66,7 @@ h1 {
   top: 0;
   right: 0;
   height: 100%;
-  width: 50px; /* Augmenter la largeur pour les aperçus miniatures */
+  width: 60px; /* Augmenter la largeur pour les aperçus miniatures */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -116,4 +116,5 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: grey; /* Assurez-vous d'avoir une couleur de fond pour la visibilité */
 }
