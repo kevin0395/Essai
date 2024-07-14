@@ -58,3 +58,35 @@ h1 {
   font-size: 1em;
   color: #666;
 }
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.sidebar-item {
+  width: 100%;
+  text-align: center;
+  color: white;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  cursor: pointer;
+  padding: 10px 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-item.active {
+  font-weight: bold;
+  background-color: #ffcc00;
+  color: black;
+}
