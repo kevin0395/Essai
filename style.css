@@ -84,7 +84,7 @@ h1 {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   cursor: pointer;
-  padding: 10px 5px;
+  padding: 8px 7px;
   transition: width 0.3s, font-weight 0.3s, opacity 0.3s;
   opacity: 0.5;
 }
@@ -96,7 +96,7 @@ h1 {
 }
 
 .sidebar-item:not(.active) {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 #mini-previews-container {
