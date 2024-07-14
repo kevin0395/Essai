@@ -112,11 +112,13 @@ h1 {
   position: relative;
   width: 200px; /* Set fixed width */
   height: 200px; /* Set fixed height for square shape */
+  overflow: hidden; /* Hide overflow */
 }
 
 .mini-preview iframe {
-  width: 100%;
-  height: 100%;
+  width: 150%; /* Increase width for cropping */
+  height: 150%; /* Increase height for cropping */
+  transform: translate(-25%, -25%); /* Center the iframe content */
 }
 
 .mini-preview-title {
