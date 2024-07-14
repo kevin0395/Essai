@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
   sidebarItems.forEach(item => {
     item.addEventListener('click', () => {
       const target = item.getAttribute('data-target');
+      sidebarItems.forEach(item => item.classList.remove('active')); // Remove active class from all items
+      item.classList.add('active'); // Add active class to the clicked item
       if (target === "home") {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         miniPreviewsContainer.classList.toggle('hidden'); // Show/Hide mini previews
