@@ -171,6 +171,45 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+  h1 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar {
+    display: none; /* Hide sidebar on mobile landscape */
+  }
+
+  #mini-previews-container {
+    display: none; /* Hide mini previews on mobile landscape */
+  }
+
+  #preview-container {
+    flex-direction: row; /* Row direction in landscape mode */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+  }
+
+  .preview {
+    width: 80%;
+    height: 80vw; /* Square proportions */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .preview-title {
+    font-size: 0.8em; /* Smaller subtitle */
+  }
+
+  .footer-left,
+  .footer-right {
+    font-size: 0.8em;
+  }
+}
+
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   h1 {
     font-size: 1.5em;
