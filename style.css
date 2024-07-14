@@ -80,7 +80,7 @@ h1 {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   cursor: pointer;
-  padding: 10px 5px; /* Ajouter une marge entre le texte et les bords */
+  padding: 7.5px 7.5px; /* Ajouter une marge entre le texte et les bords */
   transition: width 0.3s, font-weight 0.3s;
 }
 
