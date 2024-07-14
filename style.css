@@ -125,16 +125,6 @@ h1 {
 }
 
 .mini-preview-title {
-  position: absolute;
-  bottom: 10px; /* Position above the subtitle */
-  width: 100%;
-  text-align: center;
-  font-size: 1em;
-  color: #333;
-  margin-top: 10px;
-}
-
-.mini-preview-subtitle {
   text-align: center;
   font-size: 1em;
   color: #333;
