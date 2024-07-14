@@ -7,8 +7,8 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 50px; /* Augmenter la marge en haut */
-  margin-bottom: 50px; /* Réaugmenter la marge après le titre principal */
+  margin-top: 50px;
+  margin-bottom: 50px;
   color: black;
 }
 
@@ -16,19 +16,20 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0; /* Réduire l'espace entre les aperçus */
+  gap: 0;
 }
 
 .preview {
-  width: 100%; /* Prendre toute la largeur disponible */
-  max-width: 864px;
-  height: 100vh; /* Prendre toute la hauteur de l'écran */
+  width: 90%; /* Prendre une grande partie de la largeur disponible */
+  height: calc(100vh - 100px); /* Prendre toute la hauteur de l'écran moins les marges */
+  max-height: 100vh; /* S'assurer que la hauteur ne dépasse pas 100% de l'écran */
+  margin-top: 50px; /* Marge en haut */
+  margin-bottom: 50px; /* Marge en bas */
   position: relative;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 0; /* Enlever la marge en bas */
 }
 
 .preview-iframe-container {
