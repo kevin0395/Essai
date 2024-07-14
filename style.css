@@ -54,7 +54,7 @@ h1 {
 .footer-right {
   position: fixed;
   bottom: 15px;
-  right: 15px;
+  right: 70px; /* Ajuster pour que la sidebar prenne toute la hauteur */
   font-size: 1em;
   color: #666;
 }
@@ -63,18 +63,17 @@ h1 {
 .sidebar {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0; /* Place la sidebar à droite */
   height: 100%;
-  width: 50px;
+  width: 30px; /* Barre plus fine */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between; /* Les morceaux se touchent */
   z-index: 1000;
 }
 
 .sidebar-item {
+  flex: 1;
   width: 100%;
   text-align: center;
   color: white;
@@ -82,11 +81,10 @@ h1 {
   transform: rotate(180deg);
   cursor: pointer;
   padding: 10px 0;
-  transition: background-color 0.3s, color 0.3s;
+  transition: width 0.3s, font-weight 0.3s;
 }
 
 .sidebar-item.active {
   font-weight: bold;
-  background-color: #ffcc00;
-  color: black;
+  width: 50px; /* Élargir lorsque mis en évidence */
 }
