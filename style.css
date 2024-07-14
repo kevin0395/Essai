@@ -69,11 +69,12 @@ h1 {
   width: 60px; /* Augmenter la largeur pour les aperçus miniatures */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align items at the start */
+  justify-content: space-between;
   z-index: 1000;
 }
 
 .sidebar-item {
+  flex: 1;
   width: 100%;
   text-align: center;
   color: white;
