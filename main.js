@@ -1,10 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
   const previews = document.querySelectorAll('.preview');
   const sidebarItems = document.querySelectorAll('.sidebar-item');
-  
+  const miniPreviews = document.querySelectorAll('.mini-preview');
+
   sidebarItems.forEach(item => {
     item.addEventListener('click', () => {
-      const targetIndex = item.getAttribute('data-target');
+      const target = item.getAttribute('data-target');
+      if (target === "home") {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        const targetIndex = parseInt(target, 10);
+        const targetPreview = previews[targetIndex];
+        targetPreview.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  miniPreviews.forEach(item => {
+    item.addEventListener('click', () => {
+      const targetIndex = parseInt(item.getAttribute('data-target'), 10);
       const targetPreview = previews[targetIndex];
       targetPreview.scrollIntoView({ behavior: 'smooth' });
     });

@@ -20,11 +20,11 @@ h1 {
 }
 
 .preview {
-  width: 90%; /* Prendre une grande partie de la largeur disponible */
-  height: calc(100vh - 100px); /* Prendre toute la hauteur de l'écran moins les marges */
-  max-height: 100vh; /* S'assurer que la hauteur ne dépasse pas 100% de l'écran */
-  margin-top: 50px; /* Marge en haut */
-  margin-bottom: 50px; /* Marge en bas */
+  width: 90%;
+  height: calc(100vh - 100px);
+  max-height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -55,7 +55,7 @@ h1 {
 .footer-right {
   position: fixed;
   bottom: 15px;
-  right: 80px; /* Ajuster pour que la sidebar prenne toute la hauteur */
+  right: 80px;
   font-size: 1em;
   color: #666;
 }
@@ -64,12 +64,12 @@ h1 {
 .sidebar {
   position: fixed;
   top: 0;
-  right: 0; /* Place la sidebar à droite */
+  right: 0;
   height: 100%;
-  width: 40px; /* Élargir légèrement la sidebar */
+  width: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Les morceaux se touchent */
+  justify-content: space-between;
   z-index: 1000;
 }
 
@@ -81,18 +81,35 @@ h1 {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   cursor: pointer;
-  padding: 10px 5px; /* Ajouter une marge entre le texte et les bords */
+  padding: 10px 5px;
   transition: width 0.3s, font-weight 0.3s, opacity 0.3s;
-  opacity: 0.5; /* Ajouter une transparence par défaut */
+  opacity: 0.5;
 }
 
 .sidebar-item.active {
   font-weight: bold;
-  width: 60px; /* Élargir lorsque mis en évidence */
-  opacity: 1; /* Supprimer la transparence lorsque actif */
+  width: 60px;
+  opacity: 1;
 }
 
-/* Atténuer les éléments non actifs */
 .sidebar-item:not(.active) {
   opacity: 0.5;
+}
+
+.mini-previews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.mini-preview {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
 }
